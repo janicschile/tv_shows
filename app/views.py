@@ -80,7 +80,7 @@ def saveShow(request, id):
     messagePopup = f'Exito al Modificar el TV Show "{title}"'
     print(messagePopup); messages.success(request, messagePopup)
     
-    return redirect(f'/shows')
+    return redirect(f'/shows{id}')
 
 
 
