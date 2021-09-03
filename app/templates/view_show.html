@@ -4,12 +4,38 @@
 
 <div class="container mt-5">
     <h1>TV SHOW #(ID: {{data_show.id}})</h1>
-    <p class="lead">Title: <b>{{data_show.title}}</b></p>
-    <p class="lead">Network: <b>{{data_show.network}}</b></p>
-    <p class="lead">Release Data: <b>{{data_show.date}}</b></p>
-    <p class="lead">Description: <b>{{data_show.description}}</b></p>
     <hr>
-    <p class="lead">Last updated: <b>{{data_show.updated_at}}</b></p>
+    <table class="lead" style="padding: 20px;">
+        <tr>
+            <th>Title</th>
+            <td style="padding: 5px;">:</td>
+            <td>{{data_show.title}}</td>
+        </tr>
+        <tr>
+            <th>Network</th>
+            <td style="padding: 5px;">:</td>
+            <td>{{data_show.network}}</td>
+        </tr>
+        <tr>
+            <th>Release Data</th>
+            <td style="padding: 5px;">:</td>
+            <td>{{data_show.date}}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td style="padding: 5px;">:</td>
+            <td>{{data_show.description}}</td>
+        </tr>
+    </table>
+    <hr>
+    <table class="lead" style="padding: 20px;">
+        <tr>
+            <th>Last updated</th>
+            <td style="padding: 5px;">:</td>
+            <td>{{data_show.updated_at}}</td>
+        </tr>
+    </table>
+
     <a href="/shows/{{data_show.id}}/edit" class="btn btn-primary mt-3">Edit</a>
     <a href="/shows/{{data_show.id}}/delete" class="btn btn-warning mt-3">Delete</a>
 </div>
